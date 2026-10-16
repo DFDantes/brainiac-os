@@ -1,0 +1,6 @@
+<!doctype html><meta charset=utf-8><script type="importmap">{"imports":{"vitest":"/shim/vitest.js","fake-indexeddb/auto":"/shim/empty.js"}}</script>
+<body><div id="app"></div><script type="module">
+const f=new URLSearchParams(location.search).get('f'); const {run}=await import('/shim/vitest.js');
+window.__errs=[]; addEventListener('error',e=>window.__errs.push(String(e.message))); addEventListener('unhandledrejection',e=>window.__errs.push('unhandled: '+(e.reason?.message||e.reason)));
+try{ await import('/out/tests/'+f+'.test.js'); window.__res=await run(); }catch(e){ window.__res=[{n:'LOAD',ok:false,e:String(e.stack||e)}]; } window.__done=true;
+</script>

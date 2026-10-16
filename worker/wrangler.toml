@@ -1,0 +1,9 @@
+name = "brainiac-proxy"
+main = "index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Your GitHub Pages ORIGIN: scheme + host only, no path. Example: https://yourname.github.io
+ALLOWED_ORIGIN = "https://YOUR-USERNAME.github.io"
+GROQ_MODEL = "groq/compound"
+GROQ_STT_MODEL = "whisper-large-v3-turbo"
